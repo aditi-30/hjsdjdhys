@@ -1,7 +1,7 @@
 class Block {
   constructor(x, y) {
     var options = {
-        'isStatic':true,
+      //  'isStatic':true,
         'restitution':0.8,
         'friction':0.3,
         'density':1.0
