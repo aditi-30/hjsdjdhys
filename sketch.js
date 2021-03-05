@@ -62,43 +62,15 @@ function setup(){
      b28=new Block(980,170)
      b29=new Block(1020,170)
      b30=new Block(1000,120)
-     Engine.update(engine);
+     //Engine.update(engine);
 
      
 }
 
 function draw(){
     background("lavender")
-    // detectCollision(ball,b1)
-    // detectCollision(ball,b2)
-    // detectCollision(ball,b3)
-    // detectCollision(ball,b4)
-    // detectCollision(ball,b5)
-    // detectCollision(ball,b6)
-    // detectCollision(ball,b7)
-    // detectCollision(ball,b8)
-    // detectCollision(ball,b9)
-    // detectCollision(ball,b10)
-    // detectCollision(ball,b11)
-    // detectCollision(ball,b12)
-    // detectCollision(ball,b13)
-    // detectCollision(ball,b14)
-    // detectCollision(ball,b15)
-    // detectCollision(ball,b16)
-    // detectCollision(ball,b17)
-    // detectCollision(ball,b18)
-    // detectCollision(ball,b19)
-    // detectCollision(ball,b20)
-    // detectCollision(ball,b21)
-    // detectCollision(ball,b22)
-    // detectCollision(ball,b23)
-    // detectCollision(ball,b24)
-    // detectCollision(ball,b25)
-    // detectCollision(ball,b26)
-    // detectCollision(ball,b27)
-    // detectCollision(ball,b28)
-    // detectCollision(ball,b29)
-    // detectCollision(ball,b30)
+	Engine.update(engine);
+	
 
     fill("magenta")
     b1.display();
@@ -149,15 +121,7 @@ function mouseDragged(){
 }
 
 
-// function mouseReleased(){
-//     slingshot.fly();
-// }
+function mouseReleased(){
+    slingshot.fly();
+}
 
-function detectCollision(balls,Blocks){
-	ballBodyPosition=balls.body.position
-	blockBodyPosition=Blocks.body.position
-	var distance = dist(ballBodyPosition.x,ballBodyPosition.y,blockBodyPosition.x,blockBodyPosition.y)
-	if(distance<=Blocks.r+balls.r){
-	Matter.Body.setStatic(Blocks.body,false)
-	}
-	}
